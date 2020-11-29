@@ -7,7 +7,12 @@ async function register ({
   videoLicenceManager,
   videoLanguageManager
 }) {
-
+registerSetting ({
+  name: "moderator-pools",
+  label: "Enable moderator pools",
+  type: "input-checkbox",
+  private: true
+})
 }
 
 async function unregister () {
